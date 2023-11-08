@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12787753&assignment_repo_type=AssignmentRepo)
 # Tail Recursion
 
 In the lectures, we've seen code for a recursive implementation for computing
@@ -14,3 +15,7 @@ implementation. What changes between iterations of the loop?
 Is the asymptotic complexity of tail-recursive Fibonacci different from the
 non-tail-recursive version? Why, or why not? Add your answer, including your
 reasoning, to this markdown file.
+
+## Runtime:
+
+The tail recursive function calls itself with $n-1$ until $n=1$ when it returns so its complexity is $\Theta(n)$. My implementation of the Fibonacci sequence technically has the same complexity of $\Theta(n)$ but in reality, the for loop only runs $\frac{n}{2}$ times but it does 2 operations in each loop so they effectively cancel each other out to give $n$
