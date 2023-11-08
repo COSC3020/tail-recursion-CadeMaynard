@@ -18,4 +18,4 @@ reasoning, to this markdown file.
 
 ## Runtime:
 
-The tail recursive function calls itself with $n-1$ until $n=1$ when it returns so its complexity is $\Theta(n)$. My implementation of the Fibonacci sequence technically has the same complexity of $\Theta(n)$ but in reality, it only runs $\frac{n}{2}$ times.
+The tail recursive function calls itself with $n-1$ until $n=1$ when it returns so its complexity is $\Theta(n)$. My implementation of the Fibonacci sequence technically has the same complexity of $\Theta(n)$ but in reality, the for loop only runs $\frac{n}{2}$ times but it does 2 operations in each loop so they effectively cancel each other out to give $n$
